@@ -1,0 +1,223 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 10px 8px 15px;
+  background: #ebebeb;
+  letter-spacing: 0.5px;
+}
+
+.req {
+  color: #e0161b;
+}
+
+.required-note {
+  font-size: 9px;
+  margin: 0 0 12px;
+}
+
+.steps {
+  margin: 0 0 14px;
+}
+
+.steps span {
+  margin-left: 14px;
+}
+
+h2 {
+  color: #e0161b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 18px 0 6px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.row > label:first-child {
+  width: 170px;
+  padding-right: 4px;
+  text-align: right;
+  font-weight: bold;
+  line-height: 18px;
+  flex-shrink: 0;
+}
+
+.row > label small {
+  display: block;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 1.2;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: 11px;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 190px;
+  height: 17px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px solid #5ba6e8;
+}
+
+select {
+  height: 18px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+select.wide-select {
+  width: 235px;
+}
+
+.mid-input {
+  width: 145px !important;
+}
+
+.tiny-input {
+  width: 42px !important;
+  margin: 0 4px;
+}
+
+textarea {
+  width: 252px;
+  height: 58px;
+  resize: both;
+}
+
+.field-inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.field-block {
+  display: flex;
+  flex-direction: column;
+}
+
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+label.inline input {
+  margin: 0 4px 0 0;
+}
+
+.monthly {
+  margin-top: 4px;
+  padding-left: 0;
+}
+
+.note {
+  margin: 0 0 4px;
+}
+
+.note.gray {
+  color: #777;
+  margin-top: 6px;
+}
+
+.checks {
+  margin: 6px 0 10px;
+}
+
+.checks label.inline {
+  display: flex;
+  margin-right: 0;
+}
+
+.checks.volunteer {
+  margin: 4px 0 6px;
+}
+
+.comments-row {
+  margin-top: 10px;
+}
+
+.indent {
+  padding-left: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  text-align: center;
+  background: #fff;
+  padding: 4px 0;
+  margin: 6px 0 10px;
+}
+
+.buttons input {
+  font-family: inherit;
+  font-size: 10px;
+  padding: 1px 8px;
+  margin: 0 2px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  background: linear-gradient(#fff, #ddd);
+  cursor: pointer;
+}
+
+.secure,
+.help {
+  margin: 6px 0;
+  font-size: 10px;
+}
+
+.help a {
+  color: #999;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .row {
+    flex-direction: column;
+  }
+  .row > label:first-child {
+    width: auto;
+    text-align: left;
+  }
+  .indent {
+    padding-left: 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select.wide-select {
+    width: 100%;
+  }
+}
